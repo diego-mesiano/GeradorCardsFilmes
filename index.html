@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cards de Filmes</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>GERADOR DE CARDS DE FILMES</h1>
+    </header>
+    <main>
+        <article id="sessaoForm">
+            <form action="">
+                <h3>Preecha os campos e clique em Gerar Card</h3>
+                <input type="text" id="txtNome" placeholder="Nome do Filme" maxlength="150">
+                <textarea rows="" id="txtDescricao" cols="" placeholder="Descrição do filme" maxlength="500"></textarea>
+                <input type="url" id="txtUrl" placeholder="Url da imagem" maxlength="500">
+                
+                <button id = "btnGerar">Gerar Card</button>
+                <button id = "btnAleatorio">Gerar Aleatório</button>
+                <button id="resetar"><a href="index.html">Começar de novo</a></button>
+            </form>
+            <div id="paiDoCheck">
+                <input type="checkbox" name="darkMode" id="darkMode" class="darkMode">
+                <label for="darkMode" id="lblDark">Modo Escuro</label>
+            </div>
+        </article>
+        <article id="sessaoCards">
+        </article>
+    </main>
+    <footer>
+        Desenvolvidor com <strong>&#10084</strong>
+    </footer>
+    <script src="./js/App.js" type="module"></script>
+    <!--<script src="./js/GerarCards.js" type="module"></script>-->
+    
+    
+</body>
+
+</html>
